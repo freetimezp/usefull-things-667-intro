@@ -1,18 +1,439 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
 
-<body>
-    start
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Project</title>
+    </head>
 
-    <script src="./assets/js/main.js"></script>
-</body>
+    <body>
+        <header class="nav">
+            <div class="nav-group">
+                <a class="gs-group" href="#">
+                    <svg
+                        class="group-hover:gs-to-[rotate:90] group-hover:gs-duration-0.7 group-hover:gs-ease-power1.inOut"
+                        viewBox="0 0 22 22"
+                        aria-hidden="true"
+                    >
+                        <path d="M11 0v22M22 11H0" />
+                    </svg>
+                    <span class="label">Artists</span></a
+                >
+            </div>
 
+            <div class="nav-group label">
+                <a href="#">News</a>
+                <a href="#">About</a>
+                <a href="#">All</a>
+            </div>
+
+            <div class="nav-group">
+                <a class="gs-group" href="#">
+                    <span class="label">Production</span>
+                    <svg
+                        class="group-hover:gs-to-[rotate:-90] group-hover:gs-duration-0.7 group-hover:gs-ease-power1.inOut"
+                        viewBox="0 0 22 22"
+                        aria-hidden="true"
+                    >
+                        <path d="M11 0v22M22 11H0" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content" class="gs-smooth">
+                <main
+                    class="load:gs-fade load:gs-duration-0.4 load:gs-ease-power2.out"
+                >
+                    <section class="home">
+                        <div class="mark-row">
+                            <div class="mark" role="img" aria-label="AvA">
+                                <svg
+                                    class="load:gs-reveal-left load:gs-duration-1.6 load:gs-delay-0.6 load:gs-ease-power3.inOut"
+                                    viewBox="0 0 543 216"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M56.3 0.0L70.3 0.0L14.0 216.0L0.0 216.0ZM329.7 64.7L341.1 64.7L301.6 216.0L290.3 216.0ZM408.7 0.0L422.7 0.0L366.4 216.0L352.4 216.0Z"
+                                    />
+                                </svg>
+
+                                <svg
+                                    class="load:gs-reveal-right load:gs-duration-1.6 load:gs-delay-0.6 load:gs-ease-power3.inOut"
+                                    viewBox="0 0 543 216"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M79.9 0.0L134.3 0.0L190.6 216.0L136.1 216.0ZM201.9 64.7L245.6 64.7L285.0 216.0L241.4 216.0ZM432.3 0.0L486.7 0.0L543.0 216.0L488.6 216.0Z"
+                                    />
+                                </svg>
+                            </div>
+
+                            <p
+                                class="tagline load:gs-fade load:gs-duration-0.6 load:gs-delay-2.2 load:gs-ease-power2.out"
+                            >
+                                Artist management + production.
+                            </p>
+                        </div>
+
+                        <div
+                            class="gallery-window load:gs-from-[scale:1.3,y:5vh,transformOrigin:center_top] load:gs-duration-1.6 load:gs-delay-0.6 load:gs-ease-power2.out"
+                        >
+                            <div
+                                class="gallery gs-pan-x-15vw load:gs-target-[.photo] load:gs-fade load:gs-duration-0.8 load:gs-ease-power1.out load:gs-stagger-0.04"
+                            >
+                                <div
+                                    class="column load:gs-timeline load:gs-repeat load:gs-repeat-delay-5.48 load:gs-delay-5.2"
+                                >
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #d7aeac"
+                                    >
+                                        <div
+                                            class="tint load:gs-to-[opacity:1] load:gs-duration-0.5 load:gs-ease-sine.inOut load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.1 load:gs-delay-6.32"
+                                            style="background: #acc5d7"
+                                        ></div>
+
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmYgE6KegbFArqqpY4h1wkx9UYJnpteYLcg7rm1f7ms71W?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+
+                                            <img
+                                                class="photo-next load:gs-to-[opacity:1] load:gs-duration-0.1 load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.5 load:gs-delay-6.21"
+                                                src="https://assets.lummi.ai/assets/Qmf7uPGt3BUom7E2ftMWe1eLEimYqJzYWKHqWwBKyahnig?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #b1d2cf"
+                                    >
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmZeZFPNuSN6xmLJwbDmH1HzodLHauBhiTtwGgEiJmy1Ag?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tile"
+                                        style="background: #d7bcac"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/Qma6LpshvmEjhMZ5QrwN82LNJ1SKQjdwM6gc1t5FDwyHDW?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="tile"
+                                        style="background: #9fbfd1"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/QmTFPvWYUET5xyYivUdQYLdmbZYSWrrU2C6zowsmTR9U5U?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <span class="label">Noa Lindqvist</span>
+                                </div>
+
+                                <div
+                                    class="column load:gs-timeline load:gs-repeat load:gs-repeat-delay-5.48 load:gs-delay-5.82"
+                                >
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #ccd6ad"
+                                    >
+                                        <div
+                                            class="tint load:gs-to-[opacity:1] load:gs-duration-0.5 load:gs-ease-sine.inOut load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.1 load:gs-delay-6.94"
+                                            style="background: #d7b4ac"
+                                        ></div>
+
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmSfeyr8U2EmTTwmcK8gbZdXyKhuRYqUPzBPpPmTXoUnqm?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                            <img
+                                                class="photo-next load:gs-to-[opacity:1] load:gs-duration-0.1 load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.5 load:gs-delay-6.83"
+                                                src="https://assets.lummi.ai/assets/Qmb96RL4n1HJx8oKNXDZRvSBxKaAcCmbe4zqgmPcY3WN3y?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #c89fd1"
+                                    >
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmNWg3UTyEcMRJwVU1va8u4KSS9sqDjDGfkhTB9rEaRc4X?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="tile"
+                                        style="background: #d6adb3"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/QmcgiAnbLEeZM9grSYoS6UDTJUdcDBejWBep3RZB9srP1a?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div
+                                        class="tile"
+                                        style="background: #b1d2d0"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/QmXgnDznSuiB7t7mqfvHmfg9sSTj6B1GfqWZxLo8LJdJHk?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span class="label">Iris Moreau</span>
+                                </div>
+
+                                <div
+                                    class="column load:gs-timeline load:gs-repeat load:gs-repeat-delay-5.48 load:gs-delay-6.44"
+                                >
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #d6b9ae"
+                                    >
+                                        <div
+                                            class="tint load:gs-to-[opacity:1] load:gs-duration-0.5 load:gs-ease-sine.inOut load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.1 load:gs-delay-7.56"
+                                            style="background: #cab5ce"
+                                        ></div>
+
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmbMcWJ7Jh5H5tSrChjbhBrnSR1KuVEL4N7N5iG5VUChAo?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                            <img
+                                                class="photo-next load:gs-to-[opacity:1] load:gs-duration-0.1 load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.5 load:gs-delay-7.45"
+                                                src="https://assets.lummi.ai/assets/QmNmVUuyRfC4uQw2MRymE1fZ3KgcbVk929aZBhsdhPxLHy?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #c8bebc"
+                                    >
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmSeYXsLN4iAPH3LfcVWnW5ZQLoiR4bKvtSyyV5XcJKjne?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tile"
+                                        style="background: #9fd1b0"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/QmcoELVDuJSB9T6pCoDegq945cJLsyivZmAo34maycH3pT?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="tile"
+                                        style="background: #d19fac"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/QmSRj4czYp8w5C9TG9sCHvjbubLC9gd32FBWyfb3oGogJs?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <span class="label">Kofi Mensah</span>
+                                </div>
+
+                                <div
+                                    class="column load:gs-timeline load:gs-repeat load:gs-repeat-delay-5.48 load:gs-delay-7.06"
+                                >
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #d1ab9f"
+                                    >
+                                        <div
+                                            class="tint load:gs-to-[opacity:1] load:gs-duration-0.5 load:gs-ease-sine.inOut load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.1 load:gs-delay-8.18"
+                                            style="background: #a1d19f"
+                                        ></div>
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmeEyhvxhYyLQiRnomGsJzMznuS4UEPE16mQtbDMczzGwb?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                            <img
+                                                class="photo-next load:gs-to-[opacity:1] load:gs-duration-0.1 load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.5 load:gs-delay-8.07"
+                                                src="https://assets.lummi.ai/assets/Qmc6xBbvbmfu2HhVErV4HFrgnmJoGnxK7oCQgJrJa1rAw7?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #d7acaf"
+                                    >
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmYXEmKvgYSTQ8wmk484jtPwgBBW4rvCmPrQPJe1JA84Nr?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tile"
+                                        style="background: #d1b3c4"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/QmVFLR7i5PbXAGpWnrFHyLMQoKFdJj4Yd6MytYJ5sVWHzc?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="tile"
+                                        style="background: #d7acbf"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/QmUYRevMXmZtnV9WcPsxB9iSZMcqUhxVGKw7BjNnH2AjKZ?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span class="label">Lena Hart</span>
+                                </div>
+
+                                <div
+                                    class="column load:gs-timeline load:gs-repeat load:gs-repeat-delay-5.48 load:gs-delay-7.68"
+                                >
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #d7b8ad"
+                                    >
+                                        <div
+                                            class="tint load:gs-to-[opacity:1] load:gs-duration-0.5 load:gs-ease-sine.inOut load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.1 load:gs-delay-8.8"
+                                            style="background: #d7aeac"
+                                        ></div>
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmS7T6Q2SNubT5KWc3zd7WQyo3sxeUw6fCNv917FpUhdqB?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                            <img
+                                                class="photo-next load:gs-to-[opacity:1] load:gs-duration-0.1 load:gs-repeat load:gs-yoyo load:gs-repeat-delay-7.5 load:gs-delay-8.69"
+                                                src="https://assets.lummi.ai/assets/QmTMAcuLRyhUxPbA5omP4og4GkXN6xv2ZLfdPZ2p71rvX4?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tile gs-to-[y:70] gs-duration-1 gs-ease-power1.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0]"
+                                        style="background: #d7c6ac"
+                                    >
+                                        <div
+                                            class="photos gs-to-[opacity:0] gs-duration-0.9 gs-ease-sine.inOut gs-repeat-1 gs-yoyo gs-repeat-delay-0.12 gs-at-[0.1]"
+                                        >
+                                            <img
+                                                class="photo"
+                                                src="https://assets.lummi.ai/assets/QmVEDNkUDQ5dTn6twRF3og6StHv1KydeFuKqVgZX7P98HS?fm=jpg&w=1000"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="tile"
+                                        style="background: #9fd1cb"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/QmUvKjnRebG64HymDabfVz3WWz3L1gFPzEAjuGgpYoPbpp?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="tile"
+                                        style="background: #9fc3d1"
+                                    >
+                                        <img
+                                            class="photo"
+                                            src="https://assets.lummi.ai/assets/QmdYUdk7Ne6k5cfaQ4GsCtta9DicoEPMnQSNw1s4ekzDzw?fm=jpg&w=1000"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span class="label">Theo Varga</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/tweenwind@0.2.0"></script>
+
+        <script src="./assets/js/main.js"></script>
+    </body>
 </html>
